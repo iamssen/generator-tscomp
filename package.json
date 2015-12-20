@@ -1,0 +1,34 @@
+{
+  "name"         : "generator-tscomp",
+  "description"  : "Yeoman generator for Typescript + Web Component",
+  "version"      : "2015.12.20",
+  "author"       : {
+    "name"  : "SSen",
+    "email" : "i@ssen.name",
+    "url"   : "https://iamssen.github.io"
+  },
+  "license"      : "MIT",
+  "repository"   : {
+    "type" : "git",
+    "url"  : "git://github.com/iamssen/generator-tscomp.git"
+  },
+  "engines"      : {
+    "node" : ">=4.0.0"
+  },
+  "main"         : "app/index.js",
+  "files"        : [
+    "app"
+  ],
+  "keywords"     : [
+    "yeoman-generator",
+    "web",
+    "typescript"
+  ],
+  "dependencies" : {
+    "chalk"            : "latest",
+    "npm-check"        : "latest",
+    "yeoman-generator" : "latest",
+    "yosay"            : "latest",
+    "ejs"              : "latest"
+  }
+}
