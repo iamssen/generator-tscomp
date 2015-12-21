@@ -5,12 +5,17 @@ var typescript = require('gulp-tsc');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 
-gulp.task('clean', function () {
-	return gulp.src('./dist', {read: false})
+gulp.task('clean', () => {
+	return gulp.src('./dist/**/*', {read: false})
 		.pipe(clean());
 });
 
-gulp.task('typescript', function () {
+gulp.task('copy', () => {
+	return gulp.src(['./src/**/*', '!./src/typings/**', '!./src/**/*.ts', '!./src/**/*.scss'])
+		.pipe(gulp.dest('./dist'));
+})
+
+gulp.task('typescript', () => {
 	return gulp.src(['./src/**/*.ts', '!./src/typings/**'])
 		.pipe(typescript({
 			module: "commonjs",
@@ -25,10 +30,10 @@ gulp.task('typescript', function () {
 		.pipe(gulp.dest('./dist'));
 });
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
 	return gulp.src('./src/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['clean', 'typescript', 'sass']);
+gulp.task('build', ['clean', 'typescript', 'sass', 'copy']);

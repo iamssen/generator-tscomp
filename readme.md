@@ -9,5 +9,9 @@ yo tscomp
 
 # Update log
 
+## 2015.12.21
+- Exclude ignore `/dist`
+- Separated `modules.json`
+
 ## 2015.12.20
 - First release

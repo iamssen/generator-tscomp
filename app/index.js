@@ -4,78 +4,7 @@ let chalk = require('chalk');
 let path = require('path');
 let yo = require('yeoman-generator');
 let ejs = require('ejs');
-
-let moduleList = [
-	{
-		name: 'rxjs',
-		npm: 'rxjs',
-		optional: {
-			name: 'RxJs',
-			checked: true
-		}
-	},
-	{
-		name: 'jquery',
-		npm: 'jquery',
-		tsd: 'jquery',
-		optional: {
-			name: 'jQuery',
-			checked: true
-		}
-	},
-	{
-		name: 'lodash',
-		npm: 'lodash',
-		tsd: 'lodash',
-		optional: {
-			name: 'Lodash',
-			checked: true
-		}
-	},
-	{
-		name: 'angular2',
-		npm: 'angular2',
-		optional: {
-			name: 'Angular2',
-			checked: true
-		}
-	},
-	{
-		name: 'pixi.js',
-		npm: 'pixi.js',
-		tsd: 'pixi.js',
-		optional: {
-			name: 'Pixi.js',
-			checked: false
-		}
-	},
-	{
-		name: 'd3',
-		npm: 'd3',
-		tsd: 'd3',
-		optional: {
-			name: 'D3',
-			checked: false
-		}
-	},
-	{
-		name: 'd3tip',
-		npm: 'd3tip',
-		optional: {
-			name: 'D3 Tooltip',
-			checked: false
-		}
-	},
-	{
-		name: 'tween.js',
-		npm: 'tween.js',
-		tsd: 'tween.js',
-		optional: {
-			name: 'Tween.js',
-			checked: false
-		}
-	}
-];
+let moduleList = require('./modules.json');
 
 module.exports = yo.Base.extend({
 	constructor: function () {
