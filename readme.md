@@ -9,6 +9,9 @@ yo tscomp
 
 # Update log
 
+## 2016.01.31
+- Component available with npmcdn. (and fix undefined `exports` bug on browser)
+
 ## 2015.12.31
 - Remove `use strict`
 
