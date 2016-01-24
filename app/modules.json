@@ -1,70 +1,80 @@
 [
   {
-    "name"     : "rxjs",
-    "npm"      : "rxjs",
+    "name" : "es6-shim",
+    "npm" : "es6-shim",
+    "tsd" : "es6-shim"
+  },
+  {
+    "name" : "es6-promise",
+    "npm" : "es6-promise",
+    "tsd" : "es6-promise"
+  },
+  {
+    "name" : "d3",
+    "npm" : "d3",
+    "tsd" : "d3",
     "optional" : {
-      "name"    : "RxJs",
+      "name" : "D3",
       "checked" : true
     }
   },
   {
-    "name"     : "jquery",
-    "npm"      : "jquery",
-    "tsd"      : "jquery",
+    "name" : "d3tip",
+    "npm" : "d3tip",
     "optional" : {
-      "name"    : "jQuery",
-      "checked" : true
-    }
-  },
-  {
-    "name"     : "lodash",
-    "npm"      : "lodash",
-    "tsd"      : "lodash",
-    "optional" : {
-      "name"    : "Lodash",
-      "checked" : true
-    }
-  },
-  {
-    "name"     : "angular2",
-    "npm"      : "angular2",
-    "optional" : {
-      "name"    : "Angular2",
-      "checked" : true
-    }
-  },
-  {
-    "name"     : "pixi.js",
-    "npm"      : "pixi.js",
-    "tsd"      : "pixi.js",
-    "optional" : {
-      "name"    : "Pixi.js",
+      "name" : "D3 Tooltip",
       "checked" : false
     }
   },
   {
-    "name"     : "d3",
-    "npm"      : "d3",
-    "tsd"      : "d3",
+    "name" : "jquery",
+    "npm" : "jquery",
+    "tsd" : "jquery",
     "optional" : {
-      "name"    : "D3",
+      "name" : "jQuery",
+      "checked" : true
+    }
+  },
+  {
+    "name" : "rxjs",
+    "npm" : "rxjs",
+    "optional" : {
+      "name" : "RxJs",
       "checked" : false
     }
   },
   {
-    "name"     : "d3tip",
-    "npm"      : "d3tip",
+    "name" : "lodash",
+    "npm" : "lodash",
+    "tsd" : "lodash",
     "optional" : {
-      "name"    : "D3 Tooltip",
+      "name" : "Lodash",
       "checked" : false
     }
   },
   {
-    "name"     : "tween.js",
-    "npm"      : "tween.js",
-    "tsd"      : "tween.js",
+    "name" : "angular2",
+    "npm" : "angular2",
     "optional" : {
-      "name"    : "Tween.js",
+      "name" : "Angular2",
+      "checked" : false
+    }
+  },
+  {
+    "name" : "pixi.js",
+    "npm" : "pixi.js",
+    "tsd" : "pixi.js",
+    "optional" : {
+      "name" : "Pixi.js",
+      "checked" : false
+    }
+  },
+  {
+    "name" : "tween.js",
+    "npm" : "tween.js",
+    "tsd" : "tween.js",
+    "optional" : {
+      "name" : "Tween.js",
       "checked" : false
     }
   }
