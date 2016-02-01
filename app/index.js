@@ -1,5 +1,4 @@
 'use strict';
-
 let chalk = require('chalk');
 let path = require('path');
 let yo = require('yeoman-generator');
@@ -85,7 +84,7 @@ module.exports = yo.Base.extend({
         if (module.npm) npm[module.npm] = '*';
       });
 
-      data.peerDependencies = npm;
+      data.dependencies = npm;
       this.fs.writeJSON('package.json', data);
     }
   },

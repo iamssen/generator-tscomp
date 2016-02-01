@@ -9,6 +9,11 @@ yo tscomp
 
 # Update log
 
+## 2016.2.2
+- Using typescript 1.8 AMD, System.js `outFile`
+- Changed typescript compile `gulp-tsc` to `typescript@1.8.*`
+- Now `npm run build` will make 3 type module files (AMD, System.js, Common.js)
+
 ## 2016.1.25
 - Change module dialog
 

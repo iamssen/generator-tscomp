@@ -1,26 +1,27 @@
 {
-  "name"        : "<%= appname %>",
+  "name" : "<%= appname %>",
   "description" : "...",
-  "version"     : "0.0.1",
-  "author"      : {
-    "name"  : "Your name",
+  "version" : "0.0.1",
+  "author" : {
+    "name" : "Your name",
     "email" : "your@email.com",
-    "url"   : "https://your.github.io"
+    "url" : "https://your.github.io"
   },
-  "license"     : "MIT",
-  "repository"  : {
+  "license" : "MIT",
+  "repository" : {
     "type" : "git",
-    "url"  : "git://github.com/yourid/<%= appname %>.git"
+    "url" : "git://github.com/yourid/<%= appname %>.git"
   },
-  "main"        : "dist/index.js",
-  "typings"     : "dist/index.d.ts",
-  "scripts"     : {
+  "main" : "dist/index.js",
+  "typings" : "dist/index.d.ts",
+  "scripts" : {
     "build" : "gulp build"
   },
-  "devDependencies": {
-    "gulp": "*",
-    "gulp-clean": "*",
-    "gulp-sass": "*",
-    "gulp-tsc": "*"
+  "devDependencies" : {
+    "gulp" : "latest",
+    "gulp-clean" : "latest",
+    "gulp-sass" : "latest",
+    "glob" : "latest",
+    "typescript" : "1.8.*"
   }
 }
