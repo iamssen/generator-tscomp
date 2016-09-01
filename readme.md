@@ -18,7 +18,7 @@ yo tscomp
 - Change module dialog
 
 ## 2015.12.31
-- Component available with npmcdn. (and fix undefined `exports` bug on browser)
+- Component available with unpkg. (and fix undefined `exports` bug on browser)
 
 ## 2015.12.31
 - Remove `use strict`
